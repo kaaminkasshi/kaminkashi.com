@@ -1,0 +1,61 @@
+<!-- search.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <title>kaminkashi.com</title>
+     <!-- Favicon for various devices -->
+     <link rel="icon" href="images/kaminkashiLogo.jpg" sizes="16x16" type="image/png">
+   <link rel="icon" href="images/kaminkashiLogo.jpg" sizes="32x32" type="image/png">
+   <link rel="icon" href="images/kaminkashiLogo.jpg" sizes="48x48" type="image/png">
+
+   <!-- For iOS -->
+   <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="57x57">
+   <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="72x72">
+   <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="114x114">
+   <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="144x144">
+   
+   <!-- For Android -->
+   <link rel="icon" type="image/png" href="images/kaminkashiLogo.jpg" sizes="192x192">
+   <link rel="icon" type="image/png" href="images/kaminkashiLogo.jpg" sizes="512x512">
+     
+    <link rel="stylesheet" href="styleSearch.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <p id="errorMessage" class="error-message" style="display: none;"></p>
+
+        <h2>Search</h2>
+        <form id="searchForm">
+            <label for="searchDob">Enter your "Date of Birth" and find your match:</label>
+            <input type="text" id="searchDob" name="searchDob" placeholder="YYYY-MM-DD" /> 
+             <!-- Add a dropdown for gender selection -->
+             <label for="searchYear">filter:</label>
+             <select id="searchYear" name="searchYesr">
+                 <option value="year">YYYY-MM-DD</option>
+                 <option value="day">DD</option>
+                 <option value="month">MM</option>
+                 <option value="all">YYYY</option>
+             </select>
+
+            <button type="submit">Search</button> 
+        </form>
+
+        <!-- Display search results here -->
+        <div id="resultsContainer">
+            <ul id="matchingUsersList">
+                <!-- Each matching user will be appended here dynamically -->
+            </ul>
+        </div>
+
+        <!-- Add a link to go back to the home page -->
+        <a href="/home" class="go-back-link">Go back to Home</a> 
+        <a href="/search_d" class="deceased_user">find deceased</a>
+    </div>
+
+    <script src="/JsSearch.js"></script>
+</body>
+
+</html>

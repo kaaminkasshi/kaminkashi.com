@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "firstName": "Albert Einstein",
+        "lastName": "Einstein",
+        "gender": "male",
+        "Deceased": "1955-04-18", 
+        "image": "images/Einstein.jpg",
+        "description": "Albert Einstein, born on March 14, 1879, in Ulm, Germany, revolutionized physics with his theory of relativity and iconic equation E=mc². Awarded the Nobel Prize in Physics in 1921, Einstein's legacy extends beyond science, as he advocated for civil rights and pacifism. He died on April 18, 1955, in Princeton, New Jersey, leaving an indelible mark on our understanding of the universe"
+      },
+      {
+        "id": 2,
+        "firstName": "Steve Jobs",
+        "lastName": "Jobs",
+        "gender": "male",
+        "Deceased": "2011-10-05",
+        "image": "images/steveJobs.jpg",
+        "description": "Steve Jobs, born on February 24, 1955, was a visionary American entrepreneur and co-founder of Apple Inc. Known for revolutionizing the tech industry, Jobs played a key role in the development of iconic products like the iPhone and Macintosh. His relentless pursuit of innovation and design excellence made him a legendary figure. Jobs passed away on October 5, 2011, leaving a lasting impact on the world of technology and business"
+    },
+    {
+      "id": 3,
+      "firstName": "Stephen Hawking",
+      "lastName": "Hawking",
+      "gender": "male",
+      "Deceased": "2018-03-14",
+      "image": "images/stephenHawking.jpg",
+      "description": "Stephen Hawking, born on January 8, 1942, was a renowned British theoretical physicist, cosmologist, and author. Diagnosed with a rare motor neuron disease at a young age, Hawking defied the odds, making groundbreaking contributions to the understanding of black holes, the nature of the universe, and the concept of Hawking radiation. His best-known work, A Brief History of Time, brought complex scientific concepts to a broader audience. Despite physical challenges, Hawking's brilliance and resilience made him an iconic figure in the scientific community. He passed away on March 14, 2018"
+  },
+  {
+    "id": 4,
+    "firstName": "Rajneesh(Osho)",
+    "lastName": "Chandra Mohan",
+    "gender": "male",
+    "Deceased": "1990-01-19",
+    "image": "images/osho.jpg",
+    "description": "Rajneesh's full name was Rajneesh Chandra Mohan. He later adopted the name Osho when he became a spiritual teacher and leaderBorn on December 11, 1931, in Kuchwada, India, Rajneesh, later known as Osho, was a charismatic spiritual leader and philosopher. Throughout his life, he challenged societal norms and established the Rajneesh movement, emphasizing meditation and free expression. Osho passed away on January 19, 1990, leaving behind a legacy of controversial teachings and a commune in Oregon, USA, that continues to spark intrigue and discussion"
+},
+{
+  "id": 5,
+  "firstName": "Rishi Kapoor",
+  "lastName": "Kapoor",
+  "gender": "male",
+  "Deceased": "2020-04-30",
+  "image": "images/rishiKapur.jpg",
+  "description": "Rishi Kapoor, born on September 4, 1952, a Bollywood luminary's dawn,From 'Bobby' to 'Kapoor & Sons,' his legacy drawn.April 30, 2020, saw the curtain fall,An icon's departure, leaving fans in a collective thrall"
+}
+    
+]

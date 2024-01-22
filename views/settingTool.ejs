@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Favicon for various devices -->
+     <link rel="icon" href="images/kaminkashiLogo.jpg" sizes="16x16" type="image/png">
+   <link rel="icon" href="images/kaminkashiLogo.jpg" sizes="32x32" type="image/png">
+   <link rel="icon" href="images/kaminkashiLogo.jpg" sizes="48x48" type="image/png">
+
+   <!-- For iOS -->
+   <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="57x57">
+   <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="72x72">
+   <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="114x114">
+   <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="144x144">
+   
+   <!-- For Android -->
+   <link rel="icon" type="image/png" href="images/kaminkashiLogo.jpg" sizes="192x192">
+   <link rel="icon" type="image/png" href="images/kaminkashiLogo.jpg" sizes="512x512">
+    <title>Rotating Settings Icon</title>
+    <link rel="stylesheet" href="settingTool.css">
+</head>
+
+<body>
+
+    <body>
+
+        <div class="engine-container">
+            <div class="engine" id="engine"></div>
+        </div>
+
+    <script> 
+    const settingsIcon = document.getElementById('settingsIcon');
+
+let rotation = 0;
+
+function rotateIcon() {
+    rotation += 5;
+    settingsIcon.style.transform = `rotate(${rotation}deg)`;
+    requestAnimationFrame(rotateIcon);
+}
+
+rotateIcon();
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!-- Verify.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verify</title>
+</head>
+<body> 
+    <!-- Login Form -->
+    <div class="login-box">
+      <h2>Login</h2>
+      <% if (error) { %>
+          <div id="errorMessage" style="color: red;">
+              <%= error %>
+          </div>
+      <% } %>
+      <!-- Display Error Message -->
+  <p>Verification code sent to <%= email %>.</p>
+  <form action="/verify" method="post">
+    <label>Enter code:</label>
+    <input type="text" name="code" required>
+    <input type="hidden" name="email" value="<%= email %>">
+    <br>
+    <button type="submit">Verify</button>
+  </form>
+</body>
+</html>

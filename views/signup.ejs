@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="images/kaminkashiLogo.jpg" sizes="16x16" type="image/png">
+   <link rel="icon" href="images/kaminkashiLogo.jpg" sizes="32x32" type="image/png">
+   <link rel="icon" href="images/kaminkashiLogo.jpg" sizes="48x48" type="image/png">
+
+   <!-- For iOS -->
+   <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="57x57">
+   <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="72x72">
+   <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="114x114">
+   <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="144x144">
+   
+   <!-- For Android -->
+   <link rel="icon" type="image/png" href="images/kaminkashiLogo.jpg" sizes="192x192">
+   <link rel="icon" type="image/png" href="images/kaminkashiLogo.jpg" sizes="512x512">
+    <link rel="stylesheet" href="styleSignup.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Your header code remains unchanged -->
+
+    <main>
+        <div class="signup-box">
+            <h2>Sign Up</h2>
+            <form action="/signup" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" oninput="validateNameInput(this)" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" oninput="validateNameInput(this)" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <!-- Add this inside the form element -->
+                <div class="form-group">
+                    <label for="image">Profile Image (Optional):</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                </div>
+
+
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset" class="clear-button">Clear</button>
+                </div>
+
+            </form>
+
+            <div class="login-link">
+                <p>Already a member? <a href="/login">Login</a></p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var errorMessage = document.getElementById('errorMessage');
+
+            if (errorMessage) {
+                setTimeout(function () {
+                    errorMessage.style.display = 'none';
+                }, 2000);
+            }
+        });
+
+        function validateNameInput(inputElement) {
+            // Remove extra spaces and allow only capital and small letters
+            const cleanedValue = inputElement.value.replace(/\s+/g, ' ').trim().replace(/[^a-zA-Z ]/g, '');
+
+            // Update the input value with the cleaned value
+            inputElement.value = cleanedValue;
+        }
+    </script>
+
+</body>
+
+</html>

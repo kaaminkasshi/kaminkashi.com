@@ -1,0 +1,227 @@
+[
+    {
+        "id": 1,
+        "firstName": "Albert Einstein",
+        "lastName": "Einstein",
+        "gender": "male",
+        "dob": "1879-03-14",
+        "image": "images/Einstein.jpg",
+        "description": "Albert Einstein was born on March 14, 1879, in Ulm, Germany, and died on April 18, 1955, in Princeton, USA. His groundbreaking work in theoretical physics, including the famous equation E=mc^2, revolutionized our understanding of the universe. Einstein's legacy extends beyond science as an advocate for civil rights and pacifism, leaving an indelible mark on history. His intellectual curiosity and contributions make him one of the most celebrated figures in the scientific community"
+    },
+    {
+        "id": 2,
+        "firstName": "Gautam Adani",
+        "lastName": "Adani",
+        "gender": "male",
+        "dob": "1962-06-24",
+        "image": "images/adani.jpg",
+        "description": "Gautam Adani, an Indian billionaire industrialist born on June 24, 1962, is the founder and chairman of the Adani Group, one of India's largest conglomerates. Starting as a small-time diamond trader, Adani expanded his business empire into diverse sectors such as energy, infrastructure, logistics, and ports. Known for his entrepreneurial acumen, Adani has played a pivotal role in shaping India's economic landscape. As of my last knowledge update in January 2022, he was among the wealthiest individuals globally"
+    },
+    {
+        "id": 3,
+        "firstName": "Mukesh Ambani",
+        "lastName": "Ambani",
+        "gender": "male",
+        "dob": "1957-04-19",
+        "image": "images/ambani.jpg",
+        "description": "Mukesh Ambani, born on April 19, 1957, is an Indian business magnate and the chairman of Reliance Industries, one of the largest conglomerates in India. Under his leadership, Reliance has grown into a major player in diverse sectors like petrochemicals, refining, telecommunications, and retail. Ambani is renowned for his strategic vision and played a pivotal role in revolutionizing India's telecommunications industry with the launch of Jio, a disruptive 4G network. As of my last knowledge update in January 2022, he was one of the wealthiest individuals globally"
+    },
+    {
+        "id": 4,
+        "firstName": "Anil Ambani",
+        "lastName": "Ambani",
+        "gender": "male",
+        "dob": "1959-06-19",
+        "image": "images/anilAmbani.jpg",
+        "description": "Anil Ambani, born on June 4, 1959, is an Indian businessman and the younger brother of Mukesh Ambani. He is the former chairman of Reliance Communications, a telecommunications company, and Reliance Power, a power utility company. Anil Ambani has been involved in diverse sectors, including infrastructure, finance, and entertainment. However, as of my last knowledge update in January 2022, he faced financial challenges, and his businesses underwent significant debt-related issues. Please note that the situation may have evolved since then, and it's advisable to check more recent sources for the latest information on Anil Ambani"
+    },
+    {
+        "id": 5,
+        "firstName": "Narendra Modi",
+        "lastName": "Modi",
+        "gender": "male",
+        "dob": "1950-09-17",
+        "image": "images/modi.jpg",
+        "description": "ANarendra Modi, born on September 17, 1950, is the current Prime Minister of India, serving since May 2014. A member of the Bharatiya Janata Party (BJP), Modi has been a prominent figure in Indian politics, previously serving as the Chief Minister of Gujarat. Known for his economic policies and leadership initiatives, he has implemented programs like Make in India and Swachh Bharat Abhiyan"
+    },
+    {
+        "id": 6,
+        "firstName": "Sergey Brin",
+        "lastName": "Brin",
+        "gender": "male",
+        "dob": "1973-08-21",
+        "image": "images/Sergey Brin.jpg",
+        "description": "Sergey Brin, born on August 21, 1973, is a computer scientist and entrepreneur who, along with Larry Page, co-founded Google in 1998. Brin played a crucial role in developing Google's search engine algorithm. He served as the President of Alphabet Inc., Google's parent company, until stepping down in December 2019. Brin is recognized for his significant contributions to the advancement of internet technology. Please note that my information is current as of January 2022, and there may have been changes or developments since then"
+    },
+    {
+        "id": 7,
+        "firstName": "Larry Page",
+        "lastName": "Page",
+        "gender": "male",
+        "dob": "1973-03-26",
+        "image": "images/pagelarry.jpg",
+        "description": "Larry Page, born on March 26, 1973, is a co-founder of Google and served as the CEO of Alphabet Inc. until December 2019. Known for his visionary contributions to the technology industry, Page played a key role in revolutionizing internet search and shaping the digital landscape"
+    },
+    {
+        "id": 8,
+        "firstName": "Mark Zuckerberg",
+        "lastName": "Zuckerberg",
+        "gender": "male",
+        "dob": "1984-05-14",
+        "image": "images/markZ.jpg",
+        "description": "Mark Zuckerberg, born May 14, 1984, is an American entrepreneur and co-founder of Facebook (now Meta Platforms). He played a key role in building and expanding the social media platform, serving as its CEO as of my last update in January 2022"
+    },
+    {
+        "id": 9,
+        "firstName": "Sundar Pichai",
+        "lastName": "Pichai",
+        "gender": "male",
+        "dob": "1972-06-10",
+        "image": "images/sundarPichai.jpg",
+        "description": "Sundar Pichai, born June 10, 1972, is the CEO of Alphabet Inc., Google's parent company. He joined Google in 2004 and became its CEO in 2015, later taking on the leadership of Alphabet in 2019. Pichai is recognized for his contributions to the technology industry"
+    },
+    {
+        "id": 10,
+        "firstName": "Elon Musk",
+        "lastName": "Musk",
+        "gender": "male",
+        "dob": "1971-06-28",
+        "image": "images/ElonMusk.jpg",
+        "description": "lon Musk, born June 28, 1971, is a prominent entrepreneur and CEO of companies like SpaceX and Tesla. Known for his contributions to technology and space exploration, Musk is recognized for his innovative ventures"
+    },
+    {
+        "id": 11,
+        "firstName": "Jeff Bezos",
+        "lastName": "Bezos",
+        "gender": "male",
+        "dob": "1964-01-12",
+        "image": "images/JeffBezos.jpg",
+        "description": "Jeff Bezos, born on January 12, 1964, is an American entrepreneur and the founder of Amazon, one of the world's largest and most successful online retailers. Serving as Amazon's CEO for many years, Bezos played a pivotal role in the company's growth and diversification into various industries. He stepped down as Amazon's CEO in 2021 but remains involved in other ventures, including his space exploration company, Blue Origin. As of my last knowledge update in January 2022, Bezos is one of the wealthiest individuals globally"
+    },
+    {
+        "id": 12,
+        "firstName": "Steve Jobs",
+        "lastName": "Jobs",
+        "gender": "male",
+        "dob": "1955-02-24",
+        "image": "images/steveJobs.jpg",
+        "description": "Steve Jobs, born on February 24, 1955, was a visionary American entrepreneur and co-founder of Apple Inc. Known for revolutionizing the tech industry, Jobs played a key role in the development of iconic products like the iPhone and Macintosh. His relentless pursuit of innovation and design excellence made him a legendary figure. Jobs passed away on October 5, 2011, leaving a lasting impact on the world of technology and business"
+    },
+    {
+        "id": 13,
+        "firstName": "Stephen Hawking",
+        "lastName": "Hawking",
+        "gender": "male",
+        "dob": "1942-01-08",
+        "image": "images/stephenHawking.jpg",
+        "description": "Stephen Hawking, born on January 8, 1942, was a renowned British theoretical physicist, cosmologist, and author. Diagnosed with a rare motor neuron disease at a young age, Hawking defied the odds, making groundbreaking contributions to the understanding of black holes, the nature of the universe, and the concept of Hawking radiation. His best-known work, A Brief History of Time, brought complex scientific concepts to a broader audience. Despite physical challenges, Hawking's brilliance and resilience made him an iconic figure in the scientific community. He passed away on March 14, 2018"
+    },
+    {
+        "id": 14,
+        "firstName": "Rajneesh(Osho)",
+        "lastName": "Chandra Mohan",
+        "gender": "male",
+        "dob": "1931-12-11",
+        "image": "images/osho.jpg",
+        "description": "Rajneesh's full name was Rajneesh Chandra Mohan. He later adopted the name Osho when he became a spiritual teacher and leaderBorn on December 11, 1931, in Kuchwada, India, Rajneesh, later known as Osho, was a charismatic spiritual leader and philosopher. Throughout his life, he challenged societal norms and established the Rajneesh movement, emphasizing meditation and free expression. Osho passed away on January 19, 1990, leaving behind a legacy of controversial teachings and a commune in Oregon, USA, that continues to spark intrigue and discussion"
+    },
+    {
+        "id": 15,
+        "firstName": "Amitabh Bachchan",
+        "lastName": "Bachchan",
+        "gender": "male",
+        "dob": "1942-10-11",
+        "image": "images/amitabhBachan.jpg",
+        "description": "Born on October 11, 1942, in Allahabad's grace,Amitabh Bachchan, an actor with a legendary trace.From the golden era to contemporary embrace,His cinematic journey, a timeless showcase"
+    },
+    {
+        "id": 16,
+        "firstName": "Tom Cruise",
+        "lastName": "Cruise",
+        "gender": "male",
+        "dob": "1962-07-03",
+        "image": "images/tomCruise.jpg",
+        "description": "Tom Cruise, born on July 3, 1962, a cinematic force,With daring stunts and charisma, he charts his course.From Top Gun's Maverick to Mission Impossible's source,In Hollywood's spotlight, Cruise remains a powerful force"
+    },
+    {
+        "id": 17,
+        "firstName": "Tom Cruise",
+        "lastName": "Cruise",
+        "gender": "male",
+        "dob": "1962-07-03",
+        "image": "images/tomCruise.jpg",
+        "description": "Tom Cruise, born on July 3, 1962, a cinematic force,With daring stunts and charisma, he charts his course.From Top Gun's Maverick to Mission Impossible's source,In Hollywood's spotlight, Cruise remains a powerful force"
+    },
+    {
+        "id": 18,
+        "firstName": "Salman Khan",
+        "lastName": "Khan",
+        "gender": "male",
+        "dob": "1965-12-27",
+        "image": "images/salmankhan.jpg",
+        "description": "Salman Khan, born on December 27, 1965, a Bollywood star,With a magnetic presence and charisma bizarre.From 'Bajrangi Bhaijaan' to 'Dabangg,' his repertoire,A Sultan of the screen, his fame reaches far"
+    },
+    {
+        "id": 19,
+        "firstName": "Katrina Kaif",
+        "lastName": "Kaif",
+        "gender": "female",
+        "dob": "1983-07-16",
+        "image": "images/ketrinakaif.jpg",
+        "description": "Katrina Kaif, born on July 16, 1983, a beauty rare,Her Bollywood journey, a tale of flair.From 'Jab Tak Hai Jaan' to 'Tiger Zinda Hai' she'd declare,In the film industry, Katrina's grace shines everywhere"
+    },
+    {
+        "id": 20,
+        "firstName": "Aishwarya Rai",
+        "lastName": "Rai",
+        "gender": "female",
+        "dob": "1973-11-01",
+        "image": "images/ashvaryaRai.jpg",
+        "description": "Aishwarya Rai, born on November 1, 1973, a timeless queen,Her beauty and talent, an enchanting scene.From 'Devdas' to 'Jodhaa Akbar,' she's been,Bollywood's diva, radiant and serene"
+    },
+    {
+        "id": 21,
+        "firstName": "Akshay Kumar(Rajiv Hari Om Bhatia)",
+        "lastName": "Bhatia",
+        "gender": "male",
+        "dob": "1967-09-09",
+        "image": "images/AkshayKumar.jpg",
+        "description": "Akshay Kumar, born Rajiv Hari Om Bhatia on September 9, 1967,A cinematic dynamo, his versatility a celestial heaven.From 'Khiladi' to 'Padman,' his roles weave a captivating story,Bollywood's Kumar, a name renowned in glory"
+    },
+    {
+        "id": 22,
+        "firstName": "Rishi Kapoor",
+        "lastName": "Kapoor",
+        "gender": "male",
+        "dob": "1952-09-04",
+        "image": "images/rishiKapur.jpg",
+        "description": "Rishi Kapoor, born on September 4, 1952, a Bollywood luminary's dawn,From 'Bobby' to 'Kapoor & Sons,' his legacy drawn.April 30, 2020, saw the curtain fall,An icon's departure, leaving fans in a collective thrall"
+    },
+    {
+        "id": 23,
+        "firstName": "Raj Kumar(Kulbhushan Pandit)",
+        "lastName": "Pandit",
+        "gender": "male",
+        "dob": "1929-10-08",
+        "image": "images/raajKumar.jpg",
+        "description": "Raj Kumar, the Indian actor, known for his role in the film Tirangaa, he was born as Kulbhushan Pandit on October 8, 1929, and he passed away on July 3, 1996. Raj Kumar was a renowned actor in the Hindi film industry and made significant contributions to Indian cinema"
+    },
+    {
+        "id": 24,
+        "firstName": "Shah Rukh Khan",
+        "lastName": "Khan",
+        "gender": "male",
+        "dob": "1965-11-02",
+        "image": "images/shahrukhkhan.jpg",
+        "description": "Shah Rukh Khan, born on November 2, 1965, the King of Bollywood in every space.From 'Dilwale Dulhania Le Jayenge' to 'Chennai Express' pace,His charm and charisma, a cinematic grace,In the world of entertainment, Shah Rukh Khan holds an eternal place."
+    },
+    {
+        "id": 25,
+        "firstName": "Dwayne Johnson(The Rock)",
+        "lastName": "Johnson",
+        "gender": "male",
+        "dob": "1972-05-02",
+        "image": "images/RockHollyActo.jpg",
+        "description": "Dwayne The Rock Johnson, born on May 2, 1972, he is a prominent Hollywood actor, former professional wrestler, and producer. Known for his charismatic presence and action-packed roles, he has starred in blockbuster films like Jumanji, Fast & Furious, and Moana, showcasing his versatility and entertainment prowess"
+    }
+]

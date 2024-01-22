@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kaminkashi.com</title>
+   <!-- Favicon for various devices -->
+   <link rel="icon" href="images/kaminkashiLogo.jpg" sizes="16x16" type="image/png">
+   <link rel="icon" href="images/kaminkashiLogo.jpg" sizes="32x32" type="image/png">
+   <link rel="icon" href="images/kaminkashiLogo.jpg" sizes="48x48" type="image/png">
+
+   <!-- For iOS -->
+   <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="57x57">
+   <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="72x72">
+   <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="114x114">
+   <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="144x144">
+   
+   <!-- For Android -->
+   <link rel="icon" type="image/png" href="images/kaminkashiLogo.jpg" sizes="192x192">
+   <link rel="icon" type="image/png" href="images/kaminkashiLogo.jpg" sizes="512x512">
+   <style>
+    body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Optional: Add some responsive styles */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+}
+
+   </style>
+</head>
+<body>
+  <h2>Email Verification</h2>
+  <p>Verification code sent to <%= email %>.</p>
+  <p>If you haven't received a verification code on your Gmail, please refresh the page</p>
+  <form action="/verify" method="post">
+    Verification Code: <input type="text" name="verificationCode" required><br>
+    <input type="hidden" name="email" value="<%= email %>">
+    <button type="submit">Verify</button>
+  </form>
+</body>
+</html>

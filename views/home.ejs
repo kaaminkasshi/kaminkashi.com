@@ -1,0 +1,146 @@
+<!-- views/home.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kaminkashi.com</title>
+    <!-- Favicon for various devices -->
+    <link rel="icon" href="images/kaminkashiLogo.jpg" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/kaminkashiLogo.jpg" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/kaminkashiLogo.jpg" sizes="48x48" type="image/png">
+ 
+    <!-- For iOS -->
+    <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="57x57">
+    <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="72x72">
+    <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="114x114">
+    <link rel="apple-touch-icon" href="images/kaminkashiLogo.jpg" sizes="144x144">
+    
+    <!-- For Android -->
+    <link rel="icon" type="image/png" href="images/kaminkashiLogo.jpg" sizes="192x192">
+    <link rel="icon" type="image/png" href="images/kaminkashiLogo.jpg" sizes="512x512">
+    
+
+    <link rel="stylesheet" href="styleHome.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <meta name="keywords" content="dateOfBirth, uare special, your date of birth is special, find my age peaople">
+    <meta name="keywords" content="find peaople who have same my age">
+    <meta name="keywords" content="find my date of birth">
+    <meta name="keywords" content="find people who relate same my date of birth">
+    <meta name="keywords" content="how much i lucky find my date of birth">
+    <style>
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="user-profile">
+            <% if (user) { %>
+                <div style="display: flex; align-items: center;">
+                    <div
+                        style="width: 50px; height: 50px; overflow: hidden; border-radius: 50%; margin-right: 10px; position: relative;">
+                        <% if (user.image) { %>
+                            <img src="<%= user.image %>" alt="User Image"
+                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                            <% } else { %>
+                                <!-- Alter Image (Gradient Background with Animation) -->
+                                <div
+                                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: linear-gradient(45deg, #3498db, #8e44ad, #3498db, #8e44ad); animation: gradientAnimation 4s infinite;">
+                                    <!-- Optionally, you can add some text or an icon in the center -->
+                                    <span
+                                        style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; color: #fff; font-size: 12px;">No
+                                        Image</span>
+                                </div>
+                                <% } %>
+                    </div>
+                    <div>
+                        <h3 onclick="toggleEmail()">Welcome, <%= user.firstName %>!</h3>
+                        <p id="userEmail" style="display: none;">Email: <%= user.email %>
+                        </p>
+                    </div>
+                </div>
+                <% } else { %>
+                    <!-- Handle the case where the user is not defined -->
+                    <p>User not logged in</p>
+                    <% } %>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-area">
+            <form action="/search" method="GET">
+                <button type="submit">Click here! Discover Notable Personalities Born on Your Date</button>
+            </form>
+        </div>
+
+        <body>
+            <div class="container">
+                <p id="errorMessage" class="error-message" style="display: none;"></p>
+
+                <h2>Random Search</h2>
+                <form id="searchForm">
+                    <label for="matchUser"></label>
+                    <input type="text" id="matchUser" name="matchUser" placeholder="YYYY-MM-DD" /> 
+                     <!-- Add a dropdown for gender selection -->
+                     <label for="searchYear">filter:</label>
+                     <select id="searchYear" name="searchYesr">
+                         <option value="year">YYYY-MM-DD</option>
+                         <option value="day">DD</option>
+                         <option value="month">MM</option>
+                         <option value="all">YYYY</option>
+                     </select>
+        
+                    <button type="submit">Search</button> 
+                </form>
+              
+                <div id="resultsContainer">
+                    <ul id="matchingUsersList">
+                        <!-- Each matching user will be appended here dynamically -->
+                    </ul>
+                </div>
+
+                <!-- Feedback Area -->
+                <div class="feedback-area">
+                    <!-- Comment Box -->
+                    <form action="/comment" method="POST">
+                        <label for="comment"></label>
+                        <textarea id="comment" name="comment" required placeholder="enter your comment here"></textarea>
+                        <button id="cmtbtn" type="submit">Comment</button>
+                    </form>
+                </div>
+
+                <!-- Add a link to go back to the home page -->
+                <a href="/home" class="btn">Go back to Home</a>
+
+                <!-- Logout Option -->
+
+                <a href="/logout" class="btn">Logout</a>
+
+
+            </div>
+            <script>
+                function toggleEmail() {
+                    var emailElement = document.getElementById("userEmail");
+                    emailElement.style.display = (emailElement.style.display === "none" || emailElement.style.display === "") ? "block" : "none";
+                }
+            </script>
+            <script src="/JsHome.js"></script>
+        </body>
+
+</html>
