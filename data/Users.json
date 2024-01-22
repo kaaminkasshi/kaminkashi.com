@@ -1,13 +1,3 @@
 [
-  {
-    "id": 1,
-    "firstName": "amar",
-    "lastName": "kumar",
-    "email": "kaminkashi@gmail.com",
-    "password": "1234567",
-    "gender": "male",
-    "dob": "1999-08-14",
-    "image": "/uploads/Screenshot 2023-12-16 004954.png",
-    "signupTimestamp": "2024-01-20T17:36:41.191Z"
-  }
+  
 ]
