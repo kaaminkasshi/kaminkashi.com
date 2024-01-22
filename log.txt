@@ -1,0 +1,9 @@
+1/21/2024, 11:28:44 PM | IP: ::1 | Method: GET | Path: /
+1/21/2024, 11:28:45 PM | IP: ::1 | Method: GET | Path: /scrpt.js
+1/21/2024, 11:28:54 PM | IP: ::1 | Method: GET | Path: /login
+1/21/2024, 11:28:57 PM | IP: ::1 | Method: GET | Path: /signup
+1/21/2024, 11:29:25 PM | IP: ::1 | Method: POST | Path: /signup
+1/21/2024, 11:29:51 PM | IP: ::1 | Method: POST | Path: /verify
+1/21/2024, 11:29:52 PM | IP: ::1 | Method: GET | Path: /login
+1/21/2024, 11:30:00 PM | IP: ::1 | Method: POST | Path: /login
+1/21/2024, 11:30:00 PM | IP: ::1 | Method: GET | Path: /home
