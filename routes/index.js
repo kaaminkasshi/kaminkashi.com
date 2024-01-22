@@ -412,7 +412,7 @@ router.get('/search', async (req, res) => {
             return res.json({ matchingUsers });
         }
         if (matchingUsers.length > 0) {
-            res.json({ matchingUsers });
+           return res.json({ matchingUsers });
         } else {
             res.status(404).json({ error: `No matching users found for ${searchDob}.` });
         }
