@@ -17,35 +17,6 @@ const router = express.Router();
 const fs = require('fs');
 const nodemailer = require('nodemailer');
 
-// Load existing users and verification codes
-const users = require('../Users.json');  // Use the correct relative path
-const verificationCodes = require('../verificationCode.json');
-
-// Function to send verification code via email
-function sendVerificationEmail(email, verificationCode) {
-    const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: process.env.G_ID,  // Provide a valid email address
-            pass: process.env.G_PASS // Add your Gmail password
-        },
-    });
-
-    const mailOptions = {
-        from: process.env.G_ID,
-        to: email,
-        subject: 'Email Verification Code',
-        text: `Your email verification code is: ${verificationCode}`,
-    };
-
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            console.error(error);
-        } else {
-            console.log(`Email sent: ${info.response}`);
-        }
-    });
-}
 
 function authenticateUser(req, res, next) {
     const user = req.session.user;
@@ -182,18 +153,6 @@ router.post('/signup', async (req, res) => {
     await delay(1000);
     const { firstName, lastName, email, password, gender, dob } = req.body;
 
-    // Generate a 4-digit verification code
-    const verificationCode = Math.floor(1000 + Math.random() * 9000);
-
-    // Save user details and verification code
-    //userss.push({ email, password });
-    verificationCodes[email] = verificationCode;
-
-    // Send verification code via email
-    sendVerificationEmail(email, verificationCode);
-
-    res.render('emailVerify', { email });
-
     // Load or initialize the users array
     const users = loadUserDataFromFile();
     if (!users) {
@@ -246,20 +205,8 @@ router.post('/signup', async (req, res) => {
 
 
     // Redirect to the verification page after successful registration
-    // res.redirect('/verification');   //< updates 14jan2024
+    res.redirect('/verification');   //< updates 14jan2024
 });
-
-// Email verification route
-router.post('/verify', (req, res) => {
-    const { email, verificationCode } = req.body;
-
-    if (verificationCodes[email] && verificationCodes[email] == verificationCode) {
-        return res.render('verification', { email });
-    } else {
-        res.send('Invalid verification code. Please try again.');
-    }
-});
-
 
 router.get('/login', (req, res) => {
 
